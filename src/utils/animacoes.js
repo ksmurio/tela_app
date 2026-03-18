@@ -10,3 +10,15 @@ export function flutuar(element){
         ease: "power1.inOut"
     })
 }
+
+export function writeEffect(element, text,duration) {
+    const totalChars = text.length
+    let i = 0
+    element.textContent = ''
+
+    const interval = setInterval(() => {
+        element.textContent += text[i]
+        i++
+        if (i >= totalChars) clearInterval(interval)
+    }, duration)
+}

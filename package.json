@@ -4,20 +4,25 @@
   "private": true,
   "type": "module",
   "scripts": {
-    "dev": "vite",
+    "dev": "vite --host",
     "build": "vite build",
     "preview": "vite preview",
     "format": "oxfmt src/"
   },
   "dependencies": {
+    "@mdi/font": "^7.4.47",
     "gsap": "^3.14.2",
+    "router": "^2.2.0",
+    "Router": "^2.1.0",
     "vue": "^3.5.29",
+    "vue-router": "^5.0.3",
     "vuetify": "^4.0.1"
   },
   "devDependencies": {
     "@vitejs/plugin-vue": "^6.0.4",
     "@vitejs/plugin-vue-jsx": "^5.1.4",
     "oxfmt": "^0.35.0",
+    "sass": "^1.97.3",
     "vite": "^7.3.1",
     "vite-plugin-vue-devtools": "^8.0.6"
   },

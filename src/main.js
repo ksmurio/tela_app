@@ -5,16 +5,20 @@ import { createVuetify } from 'vuetify'
 import * as components from 'vuetify/components'
 import * as directives from 'vuetify/directives'
 import gsapPlugin from './plugins/gsap.js'  
+import router from './router'
 
 
 const vuetify = createVuetify({
     components,
     directives,
+    icons:{
+        defaultSet: 'mdi',
+    },
     theme: {
         themes: {
             light: {
                 colors: {
-                    background: '#436628',
+                    background: '#ffffff',
                     surface: '#ffffff',
                     primary: '#2C6E6A',
                 }
@@ -23,4 +27,4 @@ const vuetify = createVuetify({
     }
 })
 
-createApp(App).use(vuetify).use(gsapPlugin).mount('#app')
+createApp(App).use(vuetify).use(gsapPlugin).use(router).mount('#app')

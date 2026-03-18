@@ -1,10 +1,13 @@
 <script setup>
-import home from '../src/pages/home.vue'
+import VappHeader from './components/VappHeader.vue';
 </script>
 
 <template>
   <v-app>
-    <home />
+    <vapp-header />
+    <v-main>
+      <router-view />
+    </v-main>
   </v-app>
 </template>
 
